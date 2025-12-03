@@ -1,0 +1,107 @@
+
+.circulo{
+    height: 10vh;
+    width: 10vh;
+    margin-top: 2vh;
+    position: relative;
+    border-radius: 40%;
+    text-align: center;
+    justify-content: center;
+    animation: 
+        todas 12s 0s infinite,
+        bailar 5s 0s linear infinite
+    ;
+}
+
+#rojo{
+    background-color: hsl(39, 93%, 60%);
+}
+
+#verde{
+    background-color: hsl(138, 93%, 60%);
+}
+
+#morado{
+    background-color: hsl(261, 93%, 60%);
+}
+
+@keyframes todas {
+    0%{
+        left: 90vw;
+    }
+    14%{
+        left: 0vw;
+    }
+    29%{
+        top: 2vh;
+    }
+    43%{
+        top: 63vh;
+    }
+    57%{
+        top: 63vh;
+        left: 0vw;
+    }
+    72%{
+        top: 63vh;
+        left: 90vw;
+    }
+    85%{
+        top: 63vh;
+        left: 90vw;
+    }
+    100%{
+        top: 2vh;
+        left: 90vw;
+    }
+}
+
+@keyframes izquierda {
+    from{
+        left: 90vw;
+    }
+    to{
+        left: 0vw;
+    }
+    
+}
+
+@keyframes abajo {
+    from{
+        top: 2vh;
+    }
+    to{
+        top: 63vh;
+    }
+}
+
+@keyframes derecha {
+    from{
+        top: 63vh;
+        left: 0vw;
+    }
+    to{
+        top: 63vh;
+        left: 90vw;
+    }
+}
+
+@keyframes arriba {
+    from{
+        top: 63vh;
+        left: 90vw;
+    }
+    to{
+        top: 2vh;
+        left: 90vw;
+    }
+}
+
+@keyframes bailar {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
