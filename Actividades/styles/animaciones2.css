@@ -1,0 +1,277 @@
+.circulo{
+    height: 10vh;
+    width: 10vh;
+    margin-top: 2vh;
+    position: relative;
+    border-radius: 40%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#rojo{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(39, 93%, 60%);
+    animation: 
+        derecha_rojo 2s 0s,
+        arriba_rojo 2s 2s,
+        izquierda_rojo 2s 4s,
+        centro_rojo 2s 6s
+    ;
+}
+
+#verde{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(138, 93%, 60%);
+    animation: 
+        derecha_verde 2s 0s,
+        final_derecha_verde 600ms 2s,
+        arriba_verde 2s 2600ms,
+        final_arriba_verde 500ms 4600ms,
+        izquierda_verde 1800ms 5100ms,
+        final_izquierda_verde 400ms 6900ms,
+        centro_verde 2s 7200ms
+    ;
+}
+
+#morado{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(261, 93%, 60%);
+    animation: 
+        derecha_morado 2s 0s,
+        final_derecha_morado1 500ms 2s,
+        final_derecha_morado2 600ms 2500ms,
+        arriba_morado 1800ms 3100ms,
+        final_arriba_morado1 500ms 4900ms,
+        final_arriba_morado2 500ms 5400ms,
+        izquierda_morado 1600ms 5900ms,
+        final_izquierda_morado1 300ms 7500ms,
+        final_izquierda_morado2 200ms 7800ms,
+        centro_morado 1800ms 8000ms
+    ;
+}
+
+
+@keyframes derecha_rojo {
+    from{ 
+        top: 85vh;
+        left: -10vh;
+    }
+    to{
+        top: 85vh;
+        left: 93vw;
+    }
+}
+@keyframes derecha_verde {
+    from{ 
+        top: 73vh;
+        left: -20vh;
+    }
+    to{
+        top: 73vh;
+        left: -20vh;
+    }
+}
+@keyframes derecha_morado {
+    from{ 
+        top: 61vh;
+        left: -30vh;
+    }
+    to{
+        top: 61vh;
+        left: 77vw;
+    }
+}
+@keyframes final_derecha_verde {
+    from{ 
+        top: 73vh;
+        left: 85vw;
+    }
+    to{
+        top: 73vh;
+        left: 93vw;
+    }
+}
+@keyframes final_derecha_morado1 {
+    from{ 
+        top: 61vh;
+        left: 77vw;
+    }
+    to{
+        top: 61vh;
+        left: 85vw;
+    }
+}
+@keyframes final_derecha_morado2 {
+    from{ 
+        top: 61vh;
+        left: 85vw;
+    }
+    to{
+        top: 61vh;
+        left: 93vw;
+    }
+}
+@keyframes arriba_rojo {
+    from{ 
+        top: 85vh;
+        left: 93vw;
+    }
+    to{
+        top: 0vh;
+        left: 93vw;
+    }
+}
+@keyframes arriba_verde {
+    from{ 
+        top: 73vh;
+        left: 93vw;
+    }
+    to{
+        top: 0vh;
+        left: 93vw;
+    }
+}
+@keyframes arriba_morado {
+    from{ 
+        top: 61vh;
+        left: 93vw;
+    }
+    to{
+        top: 0vh;
+        left: 93vw;
+    }
+}
+
+@keyframes final_arriba_verde {
+    from{ 
+        top: 0vh;
+        left: 93vw;
+    }
+    to{
+        top: -12vh;
+        left: 93vw;
+    }
+}
+@keyframes final_arriba_morado1 {
+    from{ 
+        top: 0vh;
+        left: 93vw;
+    }
+    to{
+        top: -12vh;
+        left: 93vw;
+    }
+}
+@keyframes final_arriba_morado2 {
+    from{ 
+        top: -12vh;
+        left: 93vw;
+    }
+    to{
+        top: -24vh;
+        left: 93vw;
+    }
+}
+
+@keyframes izquierda_rojo {
+    from{ 
+        top: 0vh;
+        left: 93vw;
+    }
+    to{
+        top: 0vh;
+        left: 0vw;
+    }
+}
+
+@keyframes izquierda_verde {
+    from{ 
+        top: -12vh;
+        left: 93vw;
+    }
+    to{
+        top: -12vh;
+        left: 10vw;
+    }
+}
+@keyframes izquierda_morado {
+    from{ 
+        top: -24vh;
+        left: 93vw;
+    }
+    to{
+        top: -24vh;
+        left: 20vw;
+    }
+}
+
+@keyframes final_izquierda_verde {
+    from{ 
+        top: -12vh;
+        left: 10vw;
+    }
+    to{
+        top: -12vh;
+        left: 0vw;
+    }
+}
+
+@keyframes final_izquierda_morado1 {
+    from{ 
+        top: -24vh;
+        left: 20vw;
+    }
+    to{
+        top: -24vh;
+        left: 10vw;
+    }
+}
+
+@keyframes final_izquierda_morado2 {
+    from{ 
+        top: -24vh;
+        left: 10vw;
+    }
+    to{
+        top: -24vh;
+        left: 0vw;
+    }
+}
+
+@keyframes centro_rojo {
+    from{ 
+        top: 0vh;
+        left: 0vw;
+    }
+    to{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+
+@keyframes centro_verde {
+    from{ 
+        top: -12vh;
+        left: 0vw;
+    }
+    to{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+
+@keyframes centro_morado {
+    from{ 
+        top: -24vh;
+        left: 0vw;
+    }
+    to{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+

@@ -1,0 +1,103 @@
+.circulo{
+    height: 10vh;
+    width: 10vh;
+    margin-top: 2vh;
+    position: relative;
+    border-radius: 40%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#rojo{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(39, 93%, 60%);
+    animation: rojo 8s 0s;
+    ;
+}
+
+#verde{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(138, 93%, 60%);
+    animation: verde 8s 150ms;
+    ;
+}
+
+#morado{
+    top: 24vh;
+    left: 44vw;
+    background-color: hsl(261, 93%, 60%);
+    animation: morado 8s 250ms;
+    ;
+}
+
+
+@keyframes rojo{
+    0%{
+        top: 85vh;
+        left: -10vh;
+    }
+    25%{
+        top: 85vh;
+        left: 93vw;
+    }
+    50%{
+        top: 0vh;
+        left: 93vw;
+    }
+    75%{
+        top: 0vh;
+        left: 0vw;
+    }
+    100%{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+@keyframes verde{
+    0%{
+        top: 73vh;
+        left: -20vh;
+    }
+    25%{
+        top: 73vh;
+        left: 93vw;
+    }
+    50%{
+        top: -12vh;
+        left: 93vw;
+    }
+    75%{
+        top: -12vh;
+        left: 0vw;
+    }
+    100%{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+@keyframes morado{
+    0%{
+        top: 61vh;
+        left: -30vh;
+    }
+    25%{
+        top: 61vh;
+        left: 93vw;
+    }
+    50%{
+        top: -24vh;
+        left: 93vw;
+    }
+    75%{
+        top: -24vh;
+        left: 0vw;
+    }
+    100%{
+        top: 24vh;
+        left: 44vw;
+    }
+}
+

@@ -8,8 +8,8 @@
     text-align: center;
     justify-content: center;
     animation: 
-        todas 12s 0s infinite,
-        bailar 5s 0s linear infinite
+        todas 2s 0s reverse infinite,
+        rotar 5s 0s linear infinite
     ;
 }
 
@@ -97,7 +97,7 @@
     }
 }
 
-@keyframes bailar {
+@keyframes rotar {
     from {
     transform: rotate(0deg);
   }
